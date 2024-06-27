@@ -21,6 +21,7 @@ $('document').ready(function(){
                 url: 'espanol.html',
                 success: function(respuesta){
                     contenidoTraducido.innerHTML = respuesta
+                    boton.innerText = 'Traducir'
                 }
             })
         } else {
@@ -28,6 +29,7 @@ $('document').ready(function(){
                 url: 'ingles.html',
                 success: function(respuesta){
                     contenidoTraducido.innerHTML = respuesta
+                    boton.innerText = 'Translate'
                 }
             })
         }
