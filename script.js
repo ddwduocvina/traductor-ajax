@@ -1,9 +1,11 @@
+let contenidoTraducido = document.getElementById('contenidoTraduccion')
+let boton = document.getElementById('traductor')
+
 $('document').ready(function(){
     $.ajax({
         url: 'ingles.html',
         type: 'get',
         success: function(respuesta){
-            let contenidoTraducido = document.getElementById('contenidoTraduccion')
             contenidoTraducido.innerHTML = respuesta
         },
         error: function(){
@@ -13,5 +15,21 @@ $('document').ready(function(){
 
     $('#traductor').click(function(){
         $(this).toggleClass('idioma');
+
+        if(boton.getAttribute('class','idioma')){
+            $.get({
+                url: 'espanol.html',
+                success: function(respuesta){
+                    contenidoTraducido.innerHTML = respuesta
+                }
+            })
+        } else {
+            $.get({
+                url: 'ingles.html',
+                success: function(respuesta){
+                    contenidoTraducido.innerHTML = respuesta
+                }
+            })
+        }
     });
 });
