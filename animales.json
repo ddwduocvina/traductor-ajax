@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "name": "Hamster",
+        "image": "https://www.tusmascotas.cl/wp-content/uploads/2022/01/wakyma.com_te-lo-contamos-todo-sobre-el-hamster-dorado.jpg.webp"
+    },
+    {
+        "id": 2,
+        "name": "Perro",
+        "image": "https://www.tusmascotas.cl/wp-content/uploads/2023/03/Body-de-cobre-perro-verde-2-5.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Gato",
+        "image": "https://www.tusmascotas.cl/wp-content/uploads/2023/03/body-gato.png"
+    }
+]
